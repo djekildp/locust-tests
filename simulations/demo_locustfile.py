@@ -10,10 +10,6 @@ class JSONPlaceholderUser(HttpUser):
         self.user_id = 1
         self.post_ids = [1, 2, 3, 4, 5]
 
-    @task(3)
-    def get_users(self):
-        self.client.get("/users", params={"userId": self.user_id}, name="/users")
-
     @task(2)
     def get_comments(self):
         self.client.get(
