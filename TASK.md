@@ -9,6 +9,7 @@ Evaluate your ability to work with performance testing frameworks and Python pro
 1. Clone this repository
 2. Configure your development environment to run the tests
 3. Familiarize yourself with the existing test structure in `simulations/demo_locustfile.py`
+4. The tests target the JSONPlaceholder API: <https://jsonplaceholder.typicode.com>
 
 ## Task Requirements
 
