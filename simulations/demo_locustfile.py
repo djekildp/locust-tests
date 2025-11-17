@@ -1,4 +1,5 @@
 import random
+
 from locust import HttpUser, between, task
 
 
@@ -12,7 +13,6 @@ class JSONPlaceholderUser(HttpUser):
     @task(3)
     def get_users(self):
         self.client.get("/users", params={"userId": self.user_id}, name="/users")
-        print(f"Fetched users for userId: {self.user_id}")
 
     @task(2)
     def get_comments(self):
