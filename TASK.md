@@ -17,7 +17,7 @@ Evaluate your ability to work with performance testing frameworks and Python pro
 
 Currently, the test uses a hardcoded `user_id = 1`. Your task is to:
 
-- Read user IDs from the provided data file (`simulations/users.csv` or `simulations/users.json`)
+- Read user IDs from the provided data file (`simulations/users.csv`)
 - Assign a unique user ID to each simulated user in a round-robin fashion
 - Ensure that when user data runs out, it cycles back to the beginning
 
@@ -38,7 +38,7 @@ Modify the test flow to make it more realistic:
 - Comments should only be requested for posts that actually belong to that user
 - The test should handle API responses appropriately
 
-## Advanced Task (Bonus)
+## Advanced Task
 
 ### Part 3: Distributed Data Management
 
